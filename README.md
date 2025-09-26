@@ -1,6 +1,6 @@
 # glimage
 
-This is a test with `stb_image.h` and `stb_image_write.h` to mess with (gig)[https://github.com/schurhammer/gig] and native bindings for Gleam!
+This is a test with `stb_image.h` and `stb_image_write.h` to mess with [gig](https://github.com/schurhammer/gig) and native bindings for Gleam!
 
 # Instructions
 
