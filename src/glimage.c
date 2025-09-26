@@ -315,9 +315,7 @@ Nil glimage_main() {
   String new_data;
   List_String T0;
   List_String T1;
-  List_String T2;
-  T2 = gleam_string_to_graphemes(my_gleam_img.data);
-  T1 = gleam_list_reverse_String(T2);
+  T1 = gleam_string_to_graphemes(my_gleam_img.data);
   T0 = gleam_list_reverse_String(T1);
   new_data = gleam_string_concat(T0);
   glimage_bindings_Image new_image;
@@ -332,9 +330,9 @@ Nil glimage_main() {
     if (S0.tag == E_Error) {
       String e;
       e = S0.val.Error->value;
-      String T3;
-      T3 = append_string(new_String("There was an error saving the image: ", 37), e);
-      return gleam_io_println(T3);
+      String T2;
+      T2 = append_string(new_String("There was an error saving the image: ", 37), e);
+      return gleam_io_println(T2);
     } else {
       panic_exit(new_String("No matching clause in glimage.main", 34));
     }
